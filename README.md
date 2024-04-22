@@ -20,7 +20,7 @@ However, when trying to compile the code as a Go plugin, there's this issue:
 ```
 $ go build --mod=vendor --trimpath --buildmode=plugin -o test.o
 # flow-go-plugin
-/home/syhpoon/UNIX/soft/go/pkg/tool/linux_amd64/link: running gcc failed: exit status 1
+/go/pkg/tool/linux_amd64/link: running gcc failed: exit status 1
 /usr/bin/ld: /tmp/go-link-3804225422/000013.o: warning: relocation against `__blst_platform_cap' in read-only section `.text'
 /usr/bin/ld: /tmp/go-link-3804225422/000013.o: relocation R_X86_64_PC32 against symbol `__blst_platform_cap' can not be used when making a shared object; recompile with -fPIC
 /usr/bin/ld: final link failed: bad value
